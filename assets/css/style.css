@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
 }
@@ -14,6 +17,7 @@ ul {
 
 body {
   width: 1440px;
+
   margin: 0 auto;
   background-color: #fafafa;
 }
@@ -2952,6 +2956,7 @@ header .mobileMenu svg {
     width: 100vw;
     height: 480px;
     flex-shrink: 0;
+    background-position: center;
   }
   #HomeInfo .overlay .infoText {
     display: flex;
@@ -3353,7 +3358,7 @@ header .mobileMenu svg {
     height: 463px;
   }
   #ContactPage .contactshader .map iframe {
-    width: 768px !important;
+    width: 100% !important;
     height: 463px !important;
     overflow: hidden;
   }
@@ -3531,6 +3536,7 @@ header .mobileMenu svg {
   header {
     height: auto;
     justify-content: flex-start;
+    z-index: 99999999;
   }
   header .infobar {
     height: 30px;
@@ -3581,6 +3587,7 @@ header .mobileMenu svg {
     gap: 12px;
     width: 100vw;
     overflow: hidden;
+    background-position: center;
   }
   #HomeInfo .overlay .infoText h1 {
     width: 330px;
@@ -4006,7 +4013,7 @@ header .mobileMenu svg {
     height: 26px;
   }
   #ContactPage .contactshader .map iframe {
-    width: 390px !important;
+    width: 100% !important;
     height: 320px !important;
     border: 2px solid red;
     overflow: hidden;
@@ -4211,7 +4218,7 @@ header .mobileMenu svg {
   height: 100vh;
 
   transition: all 0.5s ease-in-out;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 100vw;
 
@@ -4341,3 +4348,9 @@ header .mobileMenu svg {
   left: 0;
   z-index: 999999;
 }
+
+/* @media only screen and (min-width: 993px) and (max-width: 1350px) {
+  .header .navbar .navbarmenu {
+    width: 30%;
+  }
+} */
