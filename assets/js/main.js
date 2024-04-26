@@ -61,3 +61,22 @@ mobileLanguageDiv.addEventListener("click", (e) => {
     mobileAdditionalLanguageDiv.style.display = "block";
   }
 });
+
+//language changer
+const mobileLanguages = document.querySelectorAll(
+  ".menuBar .menuOverlay .language .lang"
+);
+const mobilePrevLang = document.querySelector(
+  ".menuBar .menuOverlay .language .lang .selectedLang"
+);
+
+// const selectedLang
+mobileLanguages.forEach((language) => {
+  language.addEventListener("click", (e) => {
+    const prevLangText = mobilePrevLang.textContent;
+    const lang = language.textContent;
+    e.target.textContent = prevLangText;
+    mobilePrevLang.textContent = lang;
+    mobileAdditionalLanguageDiv.style.display = "none";
+  });
+});
