@@ -30,7 +30,7 @@ const mobileMenuBtn = document.querySelector(".mobileMenuBtn");
 const closeMenu = document.querySelector(".menuBar");
 const menuBar = document.querySelector(".menuBar");
 const menuItems = document.querySelectorAll(".menuList .menuItem");
-console.log(menuItems);
+
 mobileMenuBtn.addEventListener("click", function () {
   menuBar.classList.add("showMobileMenu");
 });
