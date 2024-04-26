@@ -53,7 +53,8 @@ const mobileAdditionalLanguageDiv = document.querySelector(
   ".menuBar .menuOverlay .langoptions"
 );
 
-mobileLanguageDiv.addEventListener("click", () => {
+mobileLanguageDiv.addEventListener("click", (e) => {
+  e.stopPropagation();
   if (mobileAdditionalLanguageDiv.style.display == "block") {
     mobileAdditionalLanguageDiv.style.display = "none";
   } else {
