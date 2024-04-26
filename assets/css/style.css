@@ -4024,7 +4024,7 @@ header .mobileMenu svg {
 
   /*--------------------- Information Security ---------------------------------*/
   #informationSecurity {
-    height: 616px; /*---------------Custom----*/
+    height: auto; /*---------------Custom----*/
   }
   #informationSecurity .informationshader {
     height: 134px;
