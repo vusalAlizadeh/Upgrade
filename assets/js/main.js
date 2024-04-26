@@ -44,3 +44,19 @@ menuItems.forEach(function (menuItem) {
     menuBar.classList.remove("showMobileMenu");
   });
 });
+
+//language div activator
+const mobileLanguageDiv = document.querySelector(
+  ".menuBar .menuOverlay .language"
+);
+const mobileAdditionalLanguageDiv = document.querySelector(
+  ".menuBar .menuOverlay .langoptions"
+);
+
+mobileLanguageDiv.addEventListener("click", () => {
+  if (mobileAdditionalLanguageDiv.style.display == "block") {
+    mobileAdditionalLanguageDiv.style.display = "none";
+  } else {
+    mobileAdditionalLanguageDiv.style.display = "block";
+  }
+});
